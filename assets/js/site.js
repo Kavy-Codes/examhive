@@ -221,8 +221,10 @@
       <div class="pick-head">Today's pick · ${esc(category.label)}</div>
       <h3>${esc(link.title)}</h3>
       <p>${esc(link.description)}</p>
-      <span class="status status-${link.status}" style="margin-top:12px"><i></i>${statusText(link)}</span>
-      ${link.url ? `<a class="open-btn" href="${esc(resolveUrl(link))}" data-open="${esc(link.id)}" ${/^https?:/.test(resolveUrl(link)) ? 'target="_blank" rel="noopener noreferrer"' : ''}>Open ${icon('arrow')}</a>` : ''}
+      <div class="pick-actions">
+        <span class="status status-${link.status}"><i></i>${statusText(link)}</span>
+        ${link.url ? `<a class="open-btn" href="${esc(resolveUrl(link))}" data-open="${esc(link.id)}" ${/^https?:/.test(resolveUrl(link)) ? 'target="_blank" rel="noopener noreferrer"' : ''}>Open ${icon('arrow')}</a>` : ''}
+      </div>
     </article>`;
   }
 
@@ -473,6 +475,28 @@
       const row = event.target.closest('[data-chart]');
       if (row) window.location.href = `${base}shelves/${row.dataset.chart}.html`;
     });
+    if (!reduced) {
+      host.querySelectorAll('.bar i').forEach((bar) => {
+        bar.style.width = '0';
+        requestAnimationFrame(() => { bar.style.width = 'var(--fill)'; });
+      });
+    }
+  }
+
+  function initReveals() {
+    if (reduced || !('IntersectionObserver' in window)) return;
+    const items = document.querySelectorAll('.shelf-tile, .section-label, .trust-strip, .link-card, .pick, .chart-panel, .prose > *');
+    if (!items.length) return;
+    items.forEach((item) => item.classList.add('reveal'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+    items.forEach((item) => observer.observe(item));
   }
 
   function drawMark(parent, name, color) {
@@ -493,7 +517,7 @@
       let index = 0;
       const next = () => parseFloat(tokens[index++]);
       const base = () => {
-        const last = current[current.length - 1] || at(12, 12);
+        const last = current[current.length - 1] || at(0, 0);
         return { x: last.x / scale + 12, y: last.y / scale + 12 };
       };
       while (index < tokens.length) {
@@ -642,4 +666,5 @@
   initPwa();
   initChart();
   initHive();
+  initReveals();
 })();

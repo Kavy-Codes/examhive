@@ -227,6 +227,7 @@ p {
 
 .hero h1 {
   max-width: 18ch;
+  animation: rise 700ms var(--ease) both;
   margin: 0 auto;
   font-size: clamp(44px, 9vw, 82px);
 }
@@ -239,6 +240,7 @@ p {
 
 .search-shell {
   position: relative;
+  animation: rise 700ms var(--ease) 90ms both;
   max-width: 620px;
   margin: 28px auto 0;
 }
@@ -429,6 +431,7 @@ p {
   display: block;
   height: 100%;
   width: var(--fill);
+  transition: width 800ms var(--ease);
   border-radius: 4px;
   background: var(--chart-color);
   opacity: 0.85;
@@ -476,6 +479,7 @@ p {
 
 .hive-stage {
   position: relative;
+  animation: rise 800ms var(--ease) 160ms both;
   width: 240px;
   height: 240px;
   margin: 0 auto;
@@ -489,10 +493,8 @@ p {
 }
 
 .hive-hint {
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  right: 0;
+  display: block;
+  margin-top: 6px;
   text-align: center;
   font-family: var(--font-mono);
   font-size: 10px;
@@ -628,8 +630,13 @@ p {
   max-width: 60ch;
 }
 
-.pick .open-btn {
-  margin-top: 18px;
+.pick-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 20px;
 }
 
 .trust-strip {
@@ -855,6 +862,11 @@ p {
   height: 7px;
   border-radius: 50%;
   background: var(--sc);
+  animation: breathe 2.4s ease-in-out infinite;
+}
+
+@keyframes breathe {
+  50% { opacity: 0.35; }
 }
 
 .status-working {
@@ -1295,6 +1307,32 @@ dialog::backdrop {
   }
 }
 
+@keyframes rise {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 520ms var(--ease), transform 520ms var(--ease);
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: none;
+}
+
+.search-results {
+  animation: rise 180ms var(--ease);
+}
+
+.open-btn:active,
+.more-btn:active,
+.card-extra button:active {
+  transform: scale(0.98);
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -1305,5 +1343,10 @@ dialog::backdrop {
   *::after {
     animation-duration: 0.01ms !important;
     transition-duration: 0.01ms !important;
+  }
+
+  .reveal {
+    opacity: 1;
+    transform: none;
   }
 }
