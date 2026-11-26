@@ -1,12 +1,12 @@
 {
   "meta": {
     "label": "ExamHive link registry",
-    "checkedAt": "2026-11-26T22:48:13.714Z",
+    "checkedAt": "2026-11-26T23:42:32.474Z",
     "note": "Statuses are recorded by the maintainer from periodic HTTP checks, not invented live telemetry. 'Slow' also covers sites that block automated checks.",
     "lastRun": {
-      "checked": 18,
-      "working": 10,
-      "down": 8
+      "checked": 26,
+      "working": 18,
+      "down": 7
     },
     "statuses": [
       "working",
@@ -71,7 +71,7 @@
       "description": "Large on-demand film and series library. No signup needed.",
       "icon": "film",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -89,8 +89,8 @@
       "aliases": [
         "xprime"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "bitcine",
@@ -100,7 +100,7 @@
       "description": "Regional-language film catalogue with subtitles on most titles.",
       "icon": "languages",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -117,8 +117,8 @@
       "aliases": [
         "bitcine"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "pstream",
@@ -128,7 +128,7 @@
       "description": "Offline downloads without ad breaks. Useful for travel.",
       "icon": "download",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -146,8 +146,8 @@
       "aliases": [
         "pstream"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "corsflix",
@@ -157,7 +157,7 @@
       "description": "Live sport, films and multi-language channels in one place. A VPN helps.",
       "icon": "layers",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-11-23T00:00:00Z",
       "featured": false,
       "safety": {
@@ -184,8 +184,8 @@
       "url": "https://ntvstream.cx/",
       "description": "Live events in high definition. Some streams need a VPN.",
       "icon": "trophy",
-      "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "status": "slow",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -202,9 +202,8 @@
         "ntv",
         "ntvstream"
       ],
-      "failures": 2,
-      "hidden": false,
-      "note": "Failed 1 of 3 checks."
+      "failures": 0,
+      "hidden": false
     },
     {
       "id": "topdocumentaryfilms",
@@ -214,7 +213,7 @@
       "description": "Long-form factual films, organised by subject.",
       "icon": "clapper",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -243,7 +242,7 @@
       "description": "Subbed and dubbed series with a deep back catalogue.",
       "icon": "sparkles",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -271,7 +270,7 @@
       "description": "Timed practice tests with instant scoring and explanations.",
       "icon": "clipboard",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-11-25T00:00:00Z",
       "featured": false,
       "safety": {
@@ -300,7 +299,7 @@
       "description": "A large compiled folder of recorded lectures and reference books.",
       "icon": "presentation",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -317,8 +316,8 @@
         "lectures",
         "mega"
       ],
-      "failures": 2,
-      "hidden": false,
+      "failures": 3,
+      "hidden": true,
       "note": "Failed 1 of 3 checks."
     },
     {
@@ -329,7 +328,7 @@
       "description": "A curated set of build ideas and walkthroughs. Still being charted.",
       "icon": "rocket",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -356,7 +355,7 @@
       "description": "Fiction, non-fiction and academic titles, including audio books.",
       "icon": "library",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -374,8 +373,8 @@
         "annas",
         "anna archive"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "libgen",
@@ -385,7 +384,7 @@
       "description": "Millions of books and papers with direct download mirrors.",
       "icon": "book",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -414,7 +413,7 @@
       "description": "Fiction, comics and non-fiction with frequently rotated mirrors.",
       "icon": "books",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -432,8 +431,8 @@
         "zlibrary",
         "z lib"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "ankergames",
@@ -443,7 +442,7 @@
       "description": "Pre-installed portable PC games, ready to unzip and play.",
       "icon": "gamepad",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -472,7 +471,7 @@
       "description": "Compressed game repacks with detailed install instructions.",
       "icon": "package",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-11-24T00:00:00Z",
       "featured": true,
       "safety": {
@@ -501,7 +500,7 @@
       "description": "Pre-installed Steam titles with direct downloads.",
       "icon": "disc",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -531,7 +530,7 @@
       "description": "A backup source when the main game links are unavailable.",
       "icon": "lifebuoy",
       "status": "down",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -548,8 +547,8 @@
       "aliases": [
         "gamebounty"
       ],
-      "failures": 2,
-      "hidden": false
+      "failures": 3,
+      "hidden": true
     },
     {
       "id": "about",
@@ -559,7 +558,7 @@
       "description": "Who maintains these links, and how to reach the maintainer.",
       "icon": "info",
       "status": "working",
-      "lastChecked": "2026-11-26T22:48:13.714Z",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -577,6 +576,230 @@
         "contact",
         "kavycodes"
       ],
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "jeetards-wiki",
+      "title": "JEENEETards Wiki",
+      "category": "jeeneet",
+      "url": "https://www.reddit.com/r/JEENEETards/wiki/index/",
+      "description": "Community-maintained JEE prep index, books and strategy threads.",
+      "icon": "users",
+      "tags": [
+        "jee",
+        "wiki",
+        "community"
+      ],
+      "aliases": [
+        "jeetards",
+        "reddit jee"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "fmhy-guide",
+      "title": "FMHY Beginners Guide",
+      "category": "info",
+      "url": "https://fmhy.net/beginners-guide",
+      "description": "Clear safety guide: ad-blockers, fake buttons and file scanning.",
+      "icon": "shield",
+      "tags": [
+        "safety",
+        "guide"
+      ],
+      "aliases": [
+        "fmhy",
+        "freemediaheckyeah"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "fmhy-safeguard",
+      "title": "FMHY SafeGuard",
+      "category": "info",
+      "url": "https://fmhy.github.io/FMHY-SafeGuard/",
+      "description": "Browser check that flags trusted and untrusted sites.",
+      "icon": "shield",
+      "tags": [
+        "safety",
+        "tool"
+      ],
+      "aliases": [
+        "safeguard",
+        "fmhy"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "ublock",
+      "title": "uBlock Origin",
+      "category": "info",
+      "url": "https://github.com/gorhill/uBlock",
+      "description": "The ad-blocker recommended in our safety guide.",
+      "icon": "shield",
+      "tags": [
+        "privacy",
+        "adblock"
+      ],
+      "aliases": [
+        "ublock",
+        "adblocker"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "khan",
+      "title": "Khan Academy",
+      "category": "jeeneet",
+      "url": "https://www.khanacademy.org/",
+      "description": "Free lessons in maths, physics, chemistry and biology.",
+      "icon": "cap",
+      "tags": [
+        "maths",
+        "science",
+        "free"
+      ],
+      "aliases": [
+        "khan academy"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "mitocw",
+      "title": "MIT OpenCourseWare",
+      "category": "btech",
+      "url": "https://ocw.mit.edu/",
+      "description": "Free course material from MIT, including engineering and CS.",
+      "icon": "cap",
+      "tags": [
+        "courses",
+        "engineering"
+      ],
+      "aliases": [
+        "mit",
+        "ocw"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "free-books",
+      "title": "Free Programming Books",
+      "category": "btech",
+      "url": "https://github.com/EbookFoundation/free-programming-books",
+      "description": "A large open list of free programming books by language.",
+      "icon": "code",
+      "tags": [
+        "coding",
+        "books",
+        "free"
+      ],
+      "aliases": [
+        "programming books"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "readest",
+      "title": "Readest",
+      "category": "ebooks",
+      "url": "https://readest.com/",
+      "description": "An open-source ebook reader for your own files.",
+      "icon": "book",
+      "tags": [
+        "reader",
+        "ebooks"
+      ],
+      "aliases": [
+        "reader"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "addedAt": "2026-11-26T23:05:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
       "failures": 0,
       "hidden": false
     }

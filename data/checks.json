@@ -1,7 +1,13 @@
 {
   "pstream": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 926
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -20,6 +26,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 821
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -34,8 +46,14 @@
     ]
   },
   "xprime": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1040
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -54,6 +72,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1381
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -70,6 +94,12 @@
   "animekai": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1997
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
@@ -88,6 +118,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -102,8 +138,14 @@
     ]
   },
   "annas": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 21
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -122,6 +164,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 2336
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -136,8 +184,14 @@
     ]
   },
   "ntvstream": {
-    "failures": 2,
+    "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "slow",
+        "code": 200,
+        "ms": 4659
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -156,6 +210,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 142
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -172,6 +232,12 @@
   "libgen": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1812
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
@@ -190,6 +256,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 799
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -206,6 +278,12 @@
   "steamrip": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 815
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
@@ -224,6 +302,12 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "working",
         "code": 200,
@@ -238,8 +322,14 @@
     ]
   },
   "gamebounty": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1463
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -255,8 +345,14 @@
     ]
   },
   "zlibrary": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 503,
+        "ms": 2557
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -272,8 +368,14 @@
     ]
   },
   "bitcine": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -289,8 +391,14 @@
     ]
   },
   "lectures": {
-    "failures": 2,
+    "failures": 3,
     "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
       {
         "at": "2026-11-26T22:48:13.714Z",
         "status": "down",
@@ -302,6 +410,94 @@
         "status": "down",
         "code": 0,
         "ms": 8002
+      }
+    ]
+  },
+  "jeetards-wiki": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 94
+      }
+    ]
+  },
+  "fmhy-guide": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 73
+      }
+    ]
+  },
+  "fmhy-safeguard": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 314
+      }
+    ]
+  },
+  "khan": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 136
+      }
+    ]
+  },
+  "mitocw": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 113
+      }
+    ]
+  },
+  "ublock": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 610
+      }
+    ]
+  },
+  "free-books": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 650
+      }
+    ]
+  },
+  "readest": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:42:32.474Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1306
       }
     ]
   }

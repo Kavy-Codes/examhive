@@ -504,7 +504,7 @@
     if (!markup) return;
     const scale = 0.78;
     const stroke = 2.4;
-    const at = (x, y) => ({ x: (x - 12) * scale, y: (y - 12) * scale, z: 21 });
+    const at = (x, y) => ({ x: (x - 12) * scale, y: (y - 12) * scale, z: 14 });
     const value = (tag, key) => {
       const match = tag.match(new RegExp(key + '="([^"]+)"'));
       return match ? parseFloat(match[1]) : 0;
@@ -589,7 +589,7 @@
       const d = (match[1].match(/d="([^"]+)"/) || [])[1];
       if (!d) return;
       parse(d).forEach((shape) => {
-        new Zdog.Shape({ addTo: parent, path: shape.points, closed: shape.closed, stroke, color, translate: { z: 21 } });
+        new Zdog.Shape({ addTo: parent, path: shape.points, closed: shape.closed, stroke, color, translate: { z: 14 } });
       });
     });
     [...markup.matchAll(/<line\b([^>]*)>/g)].forEach((match) => {
@@ -599,7 +599,7 @@
         path: [at(value(tag, 'x1'), value(tag, 'y1')), at(value(tag, 'x2'), value(tag, 'y2'))],
         stroke,
         color,
-        translate: { z: 21 }
+        translate: { z: 14 }
       });
     });
   }
@@ -610,13 +610,15 @@
     let spinning = !reduced;
     const illo = new Zdog.Illustration({
       element: canvas,
-      zoom: 2,
-      rotate: { x: -0.34, y: -0.2 },
+      zoom: 1.95,
+      rotate: { x: -0.24, y: -0.18 },
       dragRotate: true,
       onDragStart: () => { spinning = false; }
     });
     const radius = 24;
+    const depth = 11;
     const shades = ['#ffd45e', '#ffc247', '#ffb020', '#f5a400', '#ffd166', '#e59400', '#ffc75a'];
+    const marks = { entertainment: 'film', jeeneet: 'target', btech: 'code', ebooks: 'book', games: 'gamepad', info: 'info', hive: 'hex' };
     const cells = [{ q: 0, r: 0, shelf: 'hive' }];
     [[1, 0, 'entertainment'], [0, 1, 'jeeneet'], [-1, 1, 'btech'], [-1, 0, 'ebooks'], [0, -1, 'games'], [1, -1, 'info']]
       .forEach(([q, r, shelf]) => cells.push({ q, r, shelf }));
@@ -627,27 +629,32 @@
         translate: { x: 1.5 * radius * cell.q, y: Math.sqrt(3) * radius * (cell.r + cell.q / 2) },
         rotate: { z: Zdog.TAU / 12 }
       });
-      for (let layer = 0; layer < 6; layer++) {
-        new Zdog.Polygon({
+      for (let side = 0; side < 6; side++) {
+        const a = side * Zdog.TAU / 6;
+        const b = (side + 1) * Zdog.TAU / 6;
+        new Zdog.Shape({
           addTo: anchor,
-          sides: 6,
-          radius,
-          stroke: 5,
-          fill: false,
-          color: ['#8a5a00', '#a86c00', '#c88400', '#e09a00', '#f5ad08', '#ffb020'][layer],
-          translate: { z: -18 + layer * 7 }
+          path: [
+            { x: Math.cos(a) * radius, y: Math.sin(a) * radius, z: depth },
+            { x: Math.cos(b) * radius, y: Math.sin(b) * radius, z: depth },
+            { x: Math.cos(b) * radius, y: Math.sin(b) * radius, z: -depth },
+            { x: Math.cos(a) * radius, y: Math.sin(a) * radius, z: -depth }
+          ],
+          closed: true,
+          fill: true,
+          stroke: 1,
+          color: '#c48400'
         });
       }
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius, stroke: 7, color: '#ffc247', translate: { z: 18 } });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 5, fill: true, color: shades[index], translate: { z: 18 } });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 5, stroke: 2, color: '#c98400', translate: { z: 19 } });
-      const marks = { entertainment: 'film', jeeneet: 'target', btech: 'code', ebooks: 'book', games: 'gamepad', info: 'info', hive: 'hex' };
+      new Zdog.Polygon({ addTo: anchor, sides: 6, radius, fill: true, stroke: 2, color: '#ffb020', translate: { z: depth } });
+      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, fill: true, stroke: 2, color: shades[index], translate: { z: depth + 1 } });
+      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, stroke: 1.5, color: '#b97900', translate: { z: depth + 2 } });
       drawMark(anchor, marks[cell.shelf], '#5c3400');
     });
 
     function frame() {
       if (!document.hidden) {
-        if (spinning) illo.rotate.y += 0.005;
+        if (spinning) illo.rotate.y += 0.0025;
         illo.updateRenderGraph();
       }
       if (!reduced) requestAnimationFrame(frame);
