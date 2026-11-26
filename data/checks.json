@@ -1,0 +1,308 @@
+{
+  "pstream": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 439
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 176
+      }
+    ]
+  },
+  "corsflix": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 688
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 515
+      }
+    ]
+  },
+  "xprime": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 863
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 844
+      }
+    ]
+  },
+  "novatra": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 370
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 223
+      }
+    ]
+  },
+  "animekai": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1055
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1064
+      }
+    ]
+  },
+  "projects": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "annas": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 185
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 30
+      }
+    ]
+  },
+  "topdocumentaryfilms": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1207
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "slow",
+        "code": 200,
+        "ms": 3357
+      }
+    ]
+  },
+  "ntvstream": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 958
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 3999
+      }
+    ]
+  },
+  "ankergames": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 167
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 145
+      }
+    ]
+  },
+  "libgen": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1709
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1429
+      }
+    ]
+  },
+  "fitgirl": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1219
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 715
+      }
+    ]
+  },
+  "steamrip": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 662
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 653
+      }
+    ]
+  },
+  "about": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "gamebounty": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1451
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1489
+      }
+    ]
+  },
+  "zlibrary": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 503,
+        "ms": 1947
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 503,
+        "ms": 3048
+      }
+    ]
+  },
+  "bitcine": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      }
+    ]
+  },
+  "lectures": {
+    "failures": 2,
+    "history": [
+      {
+        "at": "2026-11-26T22:48:13.714Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8003
+      },
+      {
+        "at": "2026-11-26T21:41:17.221Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8002
+      }
+    ]
+  }
+}

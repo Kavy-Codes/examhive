@@ -1,0 +1,14 @@
+{
+  "name": "ExamHive — checked links",
+  "short_name": "ExamHive",
+  "description": "Six shelves of free links with real health checks.",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#100d1c",
+  "theme_color": "#100d1c",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
