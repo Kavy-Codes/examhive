@@ -1,12 +1,12 @@
 {
   "meta": {
     "label": "ExamHive link registry",
-    "checkedAt": "2026-11-26T23:42:32.474Z",
+    "checkedAt": "2026-11-26T23:56:38.415Z",
     "note": "Statuses are recorded by the maintainer from periodic HTTP checks, not invented live telemetry. 'Slow' also covers sites that block automated checks.",
     "lastRun": {
-      "checked": 26,
-      "working": 18,
-      "down": 7
+      "checked": 33,
+      "working": 25,
+      "down": 8
     },
     "statuses": [
       "working",
@@ -14,9 +14,8 @@
       "down",
       "soon"
     ],
-    "maintainer": "Kavycodes",
     "contact": "krush91@proton.me",
-    "credit": "Honourable mention: Jeetards"
+    "credit": "Honourable mention: JEENEETards"
   },
   "categories": [
     {
@@ -59,7 +58,7 @@
       "label": "Info",
       "index": "06",
       "color": "#6EE7C4",
-      "description": "About the hive, updates and the people behind it."
+      "description": "About the site, safety guidance, contact and policies."
     }
   ],
   "links": [
@@ -71,7 +70,7 @@
       "description": "Large on-demand film and series library. No signup needed.",
       "icon": "film",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -89,7 +88,7 @@
       "aliases": [
         "xprime"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
@@ -100,7 +99,7 @@
       "description": "Regional-language film catalogue with subtitles on most titles.",
       "icon": "languages",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -117,7 +116,7 @@
       "aliases": [
         "bitcine"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
@@ -128,7 +127,7 @@
       "description": "Offline downloads without ad breaks. Useful for travel.",
       "icon": "download",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -146,7 +145,7 @@
       "aliases": [
         "pstream"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
@@ -157,7 +156,7 @@
       "description": "Live sport, films and multi-language channels in one place. A VPN helps.",
       "icon": "layers",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-23T00:00:00Z",
       "featured": false,
       "safety": {
@@ -184,8 +183,8 @@
       "url": "https://ntvstream.cx/",
       "description": "Live events in high definition. Some streams need a VPN.",
       "icon": "trophy",
-      "status": "slow",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "status": "down",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -202,8 +201,9 @@
         "ntv",
         "ntvstream"
       ],
-      "failures": 0,
-      "hidden": false
+      "failures": 2,
+      "hidden": false,
+      "note": "Failed 1 of 3 checks."
     },
     {
       "id": "topdocumentaryfilms",
@@ -213,7 +213,7 @@
       "description": "Long-form factual films, organised by subject.",
       "icon": "clapper",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -242,7 +242,7 @@
       "description": "Subbed and dubbed series with a deep back catalogue.",
       "icon": "sparkles",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -270,7 +270,7 @@
       "description": "Timed practice tests with instant scoring and explanations.",
       "icon": "clipboard",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-25T00:00:00Z",
       "featured": false,
       "safety": {
@@ -299,7 +299,7 @@
       "description": "A large compiled folder of recorded lectures and reference books.",
       "icon": "presentation",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -316,7 +316,7 @@
         "lectures",
         "mega"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true,
       "note": "Failed 1 of 3 checks."
     },
@@ -328,7 +328,7 @@
       "description": "A curated set of build ideas and walkthroughs. Still being charted.",
       "icon": "rocket",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -355,7 +355,7 @@
       "description": "Fiction, non-fiction and academic titles, including audio books.",
       "icon": "library",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -373,7 +373,7 @@
         "annas",
         "anna archive"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
@@ -384,7 +384,7 @@
       "description": "Millions of books and papers with direct download mirrors.",
       "icon": "book",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -413,7 +413,7 @@
       "description": "Fiction, comics and non-fiction with frequently rotated mirrors.",
       "icon": "books",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -431,7 +431,7 @@
         "zlibrary",
         "z lib"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
@@ -442,7 +442,7 @@
       "description": "Pre-installed portable PC games, ready to unzip and play.",
       "icon": "gamepad",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -471,7 +471,7 @@
       "description": "Compressed game repacks with detailed install instructions.",
       "icon": "package",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-24T00:00:00Z",
       "featured": true,
       "safety": {
@@ -500,7 +500,7 @@
       "description": "Pre-installed Steam titles with direct downloads.",
       "icon": "disc",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -530,7 +530,7 @@
       "description": "A backup source when the main game links are unavailable.",
       "icon": "lifebuoy",
       "status": "down",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -547,18 +547,18 @@
       "aliases": [
         "gamebounty"
       ],
-      "failures": 3,
+      "failures": 5,
       "hidden": true
     },
     {
       "id": "about",
-      "title": "About / Contact",
+      "title": "About ExamHive",
       "category": "info",
-      "url": "mailto:krush91@proton.me",
-      "description": "Who maintains these links, and how to reach the maintainer.",
+      "url": "pages/about.html",
+      "description": "What this site is and how link health checks work.",
       "icon": "info",
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -569,18 +569,17 @@
       },
       "tags": [
         "about",
-        "contact"
+        "site"
       ],
       "aliases": [
         "about",
-        "contact",
-        "kavycodes"
+        "examhive"
       ],
       "failures": 0,
       "hidden": false
     },
     {
-      "id": "jeetards-wiki",
+      "id": "jeeneetards-wiki",
       "title": "JEENEETards Wiki",
       "category": "jeeneet",
       "url": "https://www.reddit.com/r/JEENEETards/wiki/index/",
@@ -592,11 +591,11 @@
         "community"
       ],
       "aliases": [
-        "jeetards",
+        "jeeneetards",
         "reddit jee"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -624,63 +623,7 @@
         "freemediaheckyeah"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
-      "addedAt": "2026-11-26T23:05:00Z",
-      "featured": false,
-      "safety": {
-        "safe": true,
-        "ads": false,
-        "vpn": false,
-        "noSignup": true
-      },
-      "failures": 0,
-      "hidden": false
-    },
-    {
-      "id": "fmhy-safeguard",
-      "title": "FMHY SafeGuard",
-      "category": "info",
-      "url": "https://fmhy.github.io/FMHY-SafeGuard/",
-      "description": "Browser check that flags trusted and untrusted sites.",
-      "icon": "shield",
-      "tags": [
-        "safety",
-        "tool"
-      ],
-      "aliases": [
-        "safeguard",
-        "fmhy"
-      ],
-      "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
-      "addedAt": "2026-11-26T23:05:00Z",
-      "featured": false,
-      "safety": {
-        "safe": true,
-        "ads": false,
-        "vpn": false,
-        "noSignup": true
-      },
-      "failures": 0,
-      "hidden": false
-    },
-    {
-      "id": "ublock",
-      "title": "uBlock Origin",
-      "category": "info",
-      "url": "https://github.com/gorhill/uBlock",
-      "description": "The ad-blocker recommended in our safety guide.",
-      "icon": "shield",
-      "tags": [
-        "privacy",
-        "adblock"
-      ],
-      "aliases": [
-        "ublock",
-        "adblocker"
-      ],
-      "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -708,7 +651,7 @@
         "khan academy"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -736,7 +679,7 @@
         "ocw"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -764,7 +707,7 @@
         "programming books"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -791,9 +734,259 @@
         "reader"
       ],
       "status": "working",
-      "lastChecked": "2026-11-26T23:42:32.474Z",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "category": "info",
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-26T23:20:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "tags": [
+        "contact",
+        "takedown"
+      ],
+      "failures": 0,
+      "hidden": false,
+      "id": "contact-owner",
+      "title": "Contact the owner",
+      "url": "mailto:krush91@proton.me",
+      "description": "Contact the site owner about takedowns, corrections or feedback.",
+      "icon": "mail",
+      "aliases": [
+        "contact owner"
+      ]
+    },
+    {
+      "category": "info",
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-26T23:20:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "tags": [
+        "safety",
+        "guide"
+      ],
+      "failures": 0,
+      "hidden": false,
+      "id": "safety",
+      "title": "Before you click",
+      "url": "pages/safety.html",
+      "description": "Ad-blocker, VPN and fake download button guidance.",
+      "icon": "shield",
+      "aliases": [
+        "safety guide"
+      ]
+    },
+    {
+      "category": "info",
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-26T23:20:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "tags": [
+        "faq",
+        "help"
+      ],
+      "failures": 0,
+      "hidden": false,
+      "id": "faq",
+      "title": "FAQ",
+      "url": "pages/faq.html",
+      "description": "Answers about statuses, saves, reports and takedowns.",
+      "icon": "compass",
+      "aliases": [
+        "questions"
+      ]
+    },
+    {
+      "category": "info",
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-26T23:20:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "tags": [
+        "changelog",
+        "updates"
+      ],
+      "failures": 0,
+      "hidden": false,
+      "id": "changelog",
+      "title": "What's new",
+      "url": "pages/changelog.html",
+      "description": "A public log of site changes and link health updates.",
+      "icon": "clock",
+      "aliases": [
+        "changelog"
+      ]
+    },
+    {
+      "category": "info",
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-26T23:20:00Z",
+      "featured": false,
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "tags": [
+        "submit",
+        "contribute"
+      ],
+      "failures": 0,
+      "hidden": false,
+      "id": "submit",
+      "title": "Submit a link",
+      "url": "pages/submit.html",
+      "description": "Suggest a resource for review by the site owner.",
+      "icon": "plus",
+      "aliases": [
+        "submission"
+      ]
+    },
+    {
+      "id": "learnxpw",
+      "title": "LearnXPW Lectures",
+      "category": "jeeneet",
+      "url": "https://www.learnxpw.site/",
+      "description": "Free recorded lectures and study material for exam prep.",
+      "icon": "presentation",
+      "tags": [
+        "lectures",
+        "jee",
+        "neet"
+      ],
+      "aliases": [
+        "learnxpw",
+        "pw lectures"
+      ],
+      "featured": true,
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-27T00:10:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "pwx",
+      "title": "PWx Lecture Streams",
+      "category": "jeeneet",
+      "url": "https://pwx.pages.dev",
+      "description": "Free lecture streams and notes in one place.",
+      "icon": "disc",
+      "tags": [
+        "lectures",
+        "streaming",
+        "study"
+      ],
+      "aliases": [
+        "pwx"
+      ],
+      "featured": false,
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-27T00:10:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "cuet-archive",
+      "title": "CUET '27 Archive",
+      "category": "jeeneet",
+      "url": "https://kavy-codes.github.io/cuet-archive/",
+      "description": "Mock tests and topic resources for CUET aspirants.",
+      "icon": "clipboard",
+      "tags": [
+        "cuet",
+        "mocks",
+        "practice"
+      ],
+      "aliases": [
+        "cuet",
+        "cuet archive"
+      ],
+      "featured": false,
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-27T00:10:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false
+    },
+    {
+      "id": "studyfetch",
+      "title": "StudyFetch",
+      "category": "btech",
+      "url": "https://kavy-codes.github.io/studyfetch/",
+      "description": "A downloader for self-study PDFs and notes.",
+      "icon": "download",
+      "tags": [
+        "pdf",
+        "downloader",
+        "self study"
+      ],
+      "aliases": [
+        "studyfetch",
+        "pdf downloader"
+      ],
+      "featured": true,
+      "status": "working",
+      "lastChecked": "2026-11-26T23:56:38.415Z",
+      "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
         "ads": false,

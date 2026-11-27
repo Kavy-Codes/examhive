@@ -1,7 +1,19 @@
 {
   "pstream": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 9
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 447
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -26,6 +38,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 196
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 815
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -46,8 +70,20 @@
     ]
   },
   "xprime": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1062
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 997
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -72,6 +108,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 404
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 231
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -94,6 +142,18 @@
   "animekai": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1440
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1389
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -118,6 +178,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -138,8 +210,20 @@
     ]
   },
   "annas": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 4
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 23
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -164,6 +248,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1413
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1495
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -184,8 +280,20 @@
     ]
   },
   "ntvstream": {
-    "failures": 0,
+    "failures": 2,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1299
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1012
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "slow",
@@ -210,6 +318,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 378
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 140
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -232,6 +352,18 @@
   "libgen": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1346
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1054
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -256,6 +388,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 830
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 839
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -278,6 +422,18 @@
   "steamrip": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 986
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1344
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -302,6 +458,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -322,8 +490,20 @@
     ]
   },
   "gamebounty": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1352
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 1214
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -345,8 +525,20 @@
     ]
   },
   "zlibrary": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 503,
+        "ms": 1011
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 503,
+        "ms": 706
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -368,8 +560,20 @@
     ]
   },
   "bitcine": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -391,8 +595,20 @@
     ]
   },
   "lectures": {
-    "failures": 3,
+    "failures": 5,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8002
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "down",
+        "code": 0,
+        "ms": 8001
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "down",
@@ -413,9 +629,21 @@
       }
     ]
   },
-  "jeetards-wiki": {
+  "jeeneetards-wiki": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 98
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 104
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -427,6 +655,18 @@
   "fmhy-guide": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 112
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 107
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -450,6 +690,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 123
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 96
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -460,6 +712,18 @@
   "mitocw": {
     "failures": 0,
     "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 76
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 78
+      },
       {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
@@ -483,6 +747,18 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 611
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 808
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
@@ -494,10 +770,151 @@
     "failures": 0,
     "history": [
       {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 154
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 376
+      },
+      {
         "at": "2026-11-26T23:42:32.474Z",
         "status": "working",
         "code": 200,
         "ms": 1306
+      }
+    ]
+  },
+  "contact-owner": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "safety": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "faq": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "changelog": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "submit": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      },
+      {
+        "at": "2026-11-26T23:50:02.718Z",
+        "status": "working",
+        "code": 200,
+        "ms": 0
+      }
+    ]
+  },
+  "pwx": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 69
+      }
+    ]
+  },
+  "cuet-archive": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 330
+      }
+    ]
+  },
+  "studyfetch": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 381
+      }
+    ]
+  },
+  "learnxpw": {
+    "failures": 0,
+    "history": [
+      {
+        "at": "2026-11-26T23:56:38.415Z",
+        "status": "working",
+        "code": 200,
+        "ms": 1012
       }
     ]
   }

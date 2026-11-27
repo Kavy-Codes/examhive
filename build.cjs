@@ -57,9 +57,9 @@ const categoryById = Object.fromEntries(registry.categories.map((category) => [c
 
 function footer(base) {
   return `<footer class="footer"><div class="wrap footer-inner">
-    <p class="disclaimer">ExamHive lists third-party links and hosts nothing. Free streaming of paid films, shows and live sport carries takedown and legal risk — check local law. Education, tools and open content are the point of this site.</p>
-    <div class="footer-links"><a href="mailto:krush91@proton.me">Contact / takedown</a><a href="mailto:krush91@proton.me?subject=Broken%20link%20report">Report a broken link</a><a href="https://github.com/Kavy-Codes" target="_blank" rel="noopener">Kavycodes on GitHub ↗</a></div>
-    <div class="footer-fine"><a href="${base}pages/safety.html">Before you click</a><a href="${base}pages/legal.html">Disclaimer</a><a href="${base}pages/changelog.html">What's new</a><a href="${base}pages/submit.html">Submit a link</a><span>Honourable mention: Jeetards</span></div>
+    <p class="disclaimer">ExamHive lists third-party links and hosts nothing. Some third-party links may lead to copyrighted material. Check your local laws and prefer open or legal sources where you can. Education, tools and open content are the point of this site.</p>
+    <div class="footer-links"><a href="mailto:krush91@proton.me">Contact / takedown</a><a href="mailto:krush91@proton.me?subject=Broken%20link%20report">Report a broken link</a></div>
+    <div class="footer-fine"><a href="${base}pages/safety.html">Before you click</a><a href="${base}pages/legal.html">Disclaimer</a><a href="${base}pages/changelog.html">What's new</a><a href="${base}pages/submit.html">Submit a link</a><span>Honourable mention: JEENEETards</span></div>
   </div></footer>`;
 }
 
@@ -89,7 +89,7 @@ function shelfPage(category) {
   const links = registry.links.filter((link) => link.category === category.id && !link.hidden);
   const sorted = [...links].sort((a, b) => Number(b.featured) - Number(a.featured));
   const warning = category.id === 'entertainment'
-    ? `<div class="shelf-warning">${icon('shield', base)}<p>Entertainment links are user-submitted and third-party. Free streaming of paid content may carry legal and takedown risk in your country. We host nothing.</p></div>`
+    ? `<div class="shelf-warning">${icon('shield', base)}<p>Entertainment links are user-submitted and third-party. Some entertainment sites may host copyrighted material. Check your local laws before using them. We host nothing.</p></div>`
     : '';
   return `${head(`${category.label} — ExamHive`, category.description, base)}
 <body data-base="${base}" data-shelf="${category.id}">
