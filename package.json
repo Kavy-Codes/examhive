@@ -2,7 +2,7 @@
   "name": "examhive",
   "version": "2.0.0",
   "private": true,
-  "description": "ExamHive — a curated link chartroom. Static site, no runtime dependencies.",
+  "description": "ExamHive: a curated link chartroom. Static site, no runtime dependencies.",
   "scripts": {
     "build": "node build.cjs",
     "validate": "node validate.cjs",

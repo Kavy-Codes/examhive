@@ -389,7 +389,7 @@
         const id = report.closest('.link-card').dataset.id;
         const link = data.links.find((item) => item.id === id);
         if (!link) return;
-        const subject = `ExamHive: broken link — ${link.title}`;
+        const subject = `ExamHive: broken link, ${link.title}`;
         const body = `Link: ${link.url || 'unknown'}\nStatus: ${link.status}\nLast checked: ${link.lastChecked}\n\nWhat happened:`;
         window.location.href = `mailto:krush91@proton.me?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         toast('Report prepared in your mail app.');
@@ -422,7 +422,7 @@
     const recovered = visible.filter((link) => state.saved.has(link.id) && link.status === 'working' && ['down', 'slow'].includes(state.statuses[link.id]));
     store.set('ph_statuses', current);
     state.statuses = current;
-    if (recovered.length) setTimeout(() => toast(`Good news — ${recovered[0].title} is working again.`), 900);
+    if (recovered.length) setTimeout(() => toast(`Good news, ${recovered[0].title} is working again.`), 900);
   }
 
   function initPwa() {
@@ -500,108 +500,33 @@
   }
 
   function drawMark(parent, name, color) {
-    const markup = (window.HIVE_ICONS || {})[name];
-    if (!markup) return;
-    const scale = 0.78;
-    const stroke = 2.4;
-    const at = (x, y) => ({ x: (x - 12) * scale, y: (y - 12) * scale, z: 14 });
-    const value = (tag, key) => {
-      const match = tag.match(new RegExp(key + '="([^"]+)"'));
-      return match ? parseFloat(match[1]) : 0;
-    };
-    const parse = (d) => {
-      const tokens = d.match(/[MLCZHVmlczhv]|[-+]?(?:\d*\.\d+|\d+\.?\d*)/g) || [];
-      const paths = [];
-      let current = [];
-      let closed = false;
-      let index = 0;
-      const next = () => parseFloat(tokens[index++]);
-      const base = () => {
-        const last = current[current.length - 1] || at(0, 0);
-        return { x: last.x / scale + 12, y: last.y / scale + 12 };
-      };
-      while (index < tokens.length) {
-        const command = tokens[index++];
-        const relative = command === command.toLowerCase();
-        const origin = base();
-        if (command === 'M' || command === 'm') {
-          if (current.length) paths.push({ points: current, closed });
-          const x = next();
-          current = [at(relative ? origin.x + x : x, relative ? origin.y + next() : next())];
-          closed = false;
-        } else if (command === 'L' || command === 'l') {
-          const x = next();
-          current.push(at(relative ? origin.x + x : x, relative ? origin.y + next() : next()));
-        } else if (command === 'H' || command === 'h') {
-          const x = next();
-          current.push(at(relative ? origin.x + x : x, origin.y));
-        } else if (command === 'V' || command === 'v') {
-          const y = next();
-          current.push(at(origin.x, relative ? origin.y + y : y));
-        } else if (command === 'C' || command === 'c') {
-          const x1 = next(), y1 = next(), x2 = next(), y2 = next(), x = next(), y = next();
-          const start = current[current.length - 1] || at(12, 12);
-          const a = at(relative ? origin.x + x1 : x1, relative ? origin.y + y1 : y1);
-          const b = at(relative ? origin.x + x2 : x2, relative ? origin.y + y2 : y2);
-          const end = at(relative ? origin.x + x : x, relative ? origin.y + y : y);
-          for (let step = 1; step <= 8; step++) {
-            const t = step / 8;
-            const u = 1 - t;
-            current.push({
-              x: u * u * u * start.x + 3 * u * u * t * a.x + 3 * u * t * t * b.x + t * t * t * end.x,
-              y: u * u * u * start.y + 3 * u * u * t * a.y + 3 * u * t * t * b.y + t * t * t * end.y
-            });
-          }
-        } else if (command === 'Z' || command === 'z') {
-          closed = true;
-          if (current.length) paths.push({ points: current, closed });
-          current = [];
-        }
-      }
-      if (current.length) paths.push({ points: current, closed });
-      return paths;
-    };
-
-    [...markup.matchAll(/<circle\b([^>]*)>/g)].forEach((match) => {
-      const tag = match[1];
-      new Zdog.Ellipse({
-        addTo: parent,
-        diameter: value(tag, 'r') * 2 * scale,
-        stroke,
-        color,
-        translate: at(value(tag, 'cx'), value(tag, 'cy'))
-      });
-    });
-    [...markup.matchAll(/<rect\b([^>]*)>/g)].forEach((match) => {
-      const tag = match[1];
-      const width = value(tag, 'width') * scale;
-      const height = value(tag, 'height') * scale;
-      new Zdog.Rect({
-        addTo: parent,
-        width,
-        height,
-        stroke,
-        color,
-        translate: at(value(tag, 'x') + width / (2 * scale), value(tag, 'y') + height / (2 * scale))
-      });
-    });
-    [...markup.matchAll(/<path\b([^>]*)>/g)].forEach((match) => {
-      const d = (match[1].match(/d="([^"]+)"/) || [])[1];
-      if (!d) return;
-      parse(d).forEach((shape) => {
-        new Zdog.Shape({ addTo: parent, path: shape.points, closed: shape.closed, stroke, color, translate: { z: 14 } });
-      });
-    });
-    [...markup.matchAll(/<line\b([^>]*)>/g)].forEach((match) => {
-      const tag = match[1];
-      new Zdog.Shape({
-        addTo: parent,
-        path: [at(value(tag, 'x1'), value(tag, 'y1')), at(value(tag, 'x2'), value(tag, 'y2'))],
-        stroke,
-        color,
-        translate: { z: 14 }
-      });
-    });
+    const style = { stroke: 2.4, color, translate: { z: 14 } };
+    const line = (path, extra) => new Zdog.Shape({ addTo: parent, path, closed: false, ...style, ...(extra || {}) });
+    if (name === 'film') {
+      new Zdog.Rect({ addTo: parent, width: 20, height: 14, ...style });
+      line([{ x: -5, y: -7 }, { x: -5, y: 7 }]);
+      line([{ x: 5, y: -7 }, { x: 5, y: 7 }]);
+    } else if (name === 'target') {
+      new Zdog.Ellipse({ addTo: parent, diameter: 20, ...style });
+      new Zdog.Ellipse({ addTo: parent, diameter: 12, ...style });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { z: 14 } });
+    } else if (name === 'code') {
+      line([{ x: -3, y: -7 }, { x: -9, y: 0 }, { x: -3, y: 7 }]);
+      line([{ x: 3, y: -7 }, { x: 9, y: 0 }, { x: 3, y: 7 }]);
+    } else if (name === 'book') {
+      new Zdog.Rect({ addTo: parent, width: 18, height: 20, ...style });
+      line([{ x: -4, y: -10 }, { x: -4, y: 10 }]);
+    } else if (name === 'gamepad') {
+      new Zdog.Rect({ addTo: parent, width: 22, height: 14, ...style });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: -6, y: 0, z: 14 } });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 6, y: 0, z: 14 } });
+    } else if (name === 'info') {
+      new Zdog.Ellipse({ addTo: parent, diameter: 20, ...style });
+      line([{ x: 0, y: -3 }, { x: 0, y: 7 }]);
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 0, y: -8, z: 14 } });
+    } else {
+      new Zdog.Polygon({ addTo: parent, sides: 6, radius: 8, fill: true, ...style });
+    }
   }
 
   function initHive() {

@@ -59,7 +59,7 @@ function footer(base) {
   return `<footer class="footer"><div class="wrap footer-inner">
     <p class="disclaimer">ExamHive lists third-party links and hosts nothing. Some third-party links may lead to copyrighted material. Check your local laws and prefer open or legal sources where you can. Education, tools and open content are the point of this site.</p>
     <div class="footer-links"><a href="mailto:krush91@proton.me">Contact / takedown</a><a href="mailto:krush91@proton.me?subject=Broken%20link%20report">Report a broken link</a></div>
-    <div class="footer-fine"><a href="${base}pages/safety.html">Before you click</a><a href="${base}pages/legal.html">Disclaimer</a><a href="${base}pages/changelog.html">What's new</a><a href="${base}pages/submit.html">Submit a link</a><span>Honourable mention: JEENEETards</span></div>
+    <div class="footer-fine"><a href="${base}pages/safety.html">Before you click</a><a href="${base}pages/legal.html">Disclaimer</a><a href="${base}pages/changelog.html">What's new</a><a href="${base}pages/submit.html">Submit a link</a><a href="https://www.reddit.com/r/JEENEETards/" target="_blank" rel="noopener">Honourable mention: r/JEENEETards ↗</a></div>
   </div></footer>`;
 }
 
@@ -72,7 +72,7 @@ function head(title, description, base) {
   <link rel="preload" href="${base}assets/fonts/bricolage-grotesque-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="${base}assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="${base}assets/css/fonts.css"><link rel="stylesheet" href="${base}assets/css/site.css">
-  <script defer src="${base}assets/js/links.js"></script><script defer src="${base}assets/js/hive-icons.js"></script><script defer src="${base}assets/js/site.js"></script>
+  <script defer src="${base}assets/js/links.js"></script><script defer src="${base}assets/js/site.js"></script>
 </head>`;
 }
 
@@ -91,7 +91,7 @@ function shelfPage(category) {
   const warning = category.id === 'entertainment'
     ? `<div class="shelf-warning">${icon('shield', base)}<p>Entertainment links are user-submitted and third-party. Some entertainment sites may host copyrighted material. Check your local laws before using them. We host nothing.</p></div>`
     : '';
-  return `${head(`${category.label} — ExamHive`, category.description, base)}
+  return `${head(`${category.label} | ExamHive`, category.description, base)}
 <body data-base="${base}" data-shelf="${category.id}">
   ${topbar(base)}
   <main class="wrap shelf">
@@ -117,8 +117,8 @@ registry.categories.forEach((category) => {
 
 fs.writeFileSync(
   path.join(root, 'assets/js/links.js'),
-  `/* Generated from links.json by build.cjs — do not edit by hand. */\nwindow.EXAM_LINKS = ${JSON.stringify(registry)};\n`
+  `/* Generated from links.json by build.cjs. Do not edit by hand. */\nwindow.EXAM_LINKS = ${JSON.stringify(registry)};\n`
 );
 
 const visible = registry.links.filter((link) => !link.hidden);
-console.log(`Built 6 shelf pages and assets/js/links.js — ${visible.length} visible links, ${registry.meta.checkedAt}.`);
+console.log(`Built 6 shelf pages and assets/js/links.js: ${visible.length} visible links, ${registry.meta.checkedAt}.`);

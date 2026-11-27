@@ -1349,4 +1349,12 @@ dialog::backdrop {
     opacity: 1;
     transform: none;
   }
+
+  .hero h1,
+  .search-shell,
+  .hive-stage {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
 }
