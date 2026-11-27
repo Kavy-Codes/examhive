@@ -1,11 +1,11 @@
 {
   "meta": {
     "label": "ExamHive link registry",
-    "checkedAt": "2026-11-27T13:40:52.398Z",
+    "checkedAt": "2026-11-27T23:58:54.308Z",
     "note": "Statuses are recorded by the maintainer from periodic HTTP checks, not invented live telemetry. 'Slow' also covers sites that block automated checks.",
     "lastRun": {
       "checked": 54,
-      "working": 38,
+      "working": 39,
       "down": 8
     },
     "statuses": [
@@ -77,7 +77,7 @@
       "description": "Live sport, films and multi-language channels in one place. A VPN helps.",
       "icon": "layers",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-23T00:00:00Z",
       "featured": false,
       "safety": {
@@ -106,7 +106,7 @@
       "description": "Live events in high definition. Some streams need a VPN.",
       "icon": "trophy",
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -135,7 +135,7 @@
       "description": "Long-form factual films, organised by subject.",
       "icon": "clapper",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -165,7 +165,7 @@
       "description": "Subbed and dubbed anime series with a deep back catalogue.",
       "icon": "sparkles",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -195,7 +195,7 @@
       "description": "Timed practice tests with instant scoring and explanations.",
       "icon": "clipboard",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-25T00:00:00Z",
       "featured": false,
       "safety": {
@@ -225,7 +225,7 @@
       "description": "A large compiled folder of recorded lectures and reference books.",
       "icon": "presentation",
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -242,7 +242,7 @@
         "lectures",
         "mega"
       ],
-      "failures": 10,
+      "failures": 11,
       "hidden": false,
       "note": "Failed 1 of 3 checks.",
       "lowPriority": true
@@ -255,7 +255,7 @@
       "description": "A curated set of build ideas and walkthroughs. Still being charted.",
       "icon": "rocket",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -283,7 +283,7 @@
       "description": "Fiction, non-fiction and academic titles, including audio books.",
       "icon": "library",
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -301,7 +301,7 @@
         "annas",
         "anna archive"
       ],
-      "failures": 10,
+      "failures": 11,
       "hidden": false,
       "lowPriority": true
     },
@@ -313,7 +313,7 @@
       "description": "Millions of books and papers with direct download mirrors.",
       "icon": "book",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -343,7 +343,7 @@
       "description": "Fiction, comics and non-fiction with frequently rotated mirrors.",
       "icon": "books",
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -361,7 +361,7 @@
         "zlibrary",
         "z lib"
       ],
-      "failures": 10,
+      "failures": 11,
       "hidden": false,
       "lowPriority": true
     },
@@ -373,7 +373,7 @@
       "description": "Pre-installed portable PC games, ready to unzip and play.",
       "icon": "gamepad",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -403,7 +403,7 @@
       "description": "Compressed game repacks with detailed install instructions.",
       "icon": "package",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-24T00:00:00Z",
       "featured": true,
       "safety": {
@@ -433,7 +433,7 @@
       "description": "Pre-installed Steam titles with direct downloads.",
       "icon": "disc",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -464,7 +464,7 @@
       "description": "A backup source when the main game links are unavailable.",
       "icon": "lifebuoy",
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -481,7 +481,7 @@
       "aliases": [
         "gamebounty"
       ],
-      "failures": 10,
+      "failures": 11,
       "hidden": false,
       "lowPriority": true
     },
@@ -493,7 +493,7 @@
       "description": "What this site is and how link health checks work.",
       "icon": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -531,7 +531,7 @@
         "reddit jee"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -560,7 +560,7 @@
         "freemediaheckyeah"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -589,7 +589,7 @@
         "khan academy"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -618,7 +618,7 @@
         "ocw"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -647,7 +647,7 @@
         "programming books"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -675,7 +675,7 @@
         "reader"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -691,7 +691,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -719,7 +719,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -747,7 +747,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -775,7 +775,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -803,7 +803,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -846,7 +846,7 @@
       ],
       "featured": true,
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -875,7 +875,7 @@
       ],
       "featured": false,
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -905,7 +905,7 @@
       ],
       "featured": false,
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -935,7 +935,7 @@
       ],
       "featured": true,
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -960,7 +960,7 @@
         "legal"
       ],
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -972,7 +972,7 @@
         "gutenberg",
         "project gutenberg"
       ],
-      "failures": 5,
+      "failures": 6,
       "hidden": false,
       "lowPriority": true,
       "note": "Failed 1 of 3 checks."
@@ -989,8 +989,8 @@
         "library",
         "legal"
       ],
-      "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "status": "working",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1019,7 +1019,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1048,7 +1048,7 @@
         "legal"
       ],
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1060,7 +1060,7 @@
         "ncert",
         "ncert textbooks"
       ],
-      "failures": 5,
+      "failures": 6,
       "hidden": false,
       "lowPriority": true,
       "note": "Failed 1 of 3 checks."
@@ -1078,7 +1078,7 @@
         "notices"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1107,7 +1107,7 @@
         "free"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1136,7 +1136,7 @@
         "free"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1165,7 +1165,7 @@
         "developer"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1194,7 +1194,7 @@
         "practice"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1223,7 +1223,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1252,7 +1252,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1280,7 +1280,7 @@
         "guide"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1308,7 +1308,7 @@
         "tool"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1336,7 +1336,7 @@
         "adblock"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1368,7 +1368,7 @@
         "allen modules"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1396,7 +1396,7 @@
         "mega dump"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1424,7 +1424,7 @@
         "advanced dump"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1452,7 +1452,7 @@
         "final sauce"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1481,7 +1481,7 @@
       ],
       "featured": true,
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1489,7 +1489,7 @@
         "vpn": false,
         "noSignup": true
       },
-      "failures": 4,
+      "failures": 5,
       "hidden": false,
       "lowPriority": true,
       "note": "Failed 1 of 3 checks."
@@ -1509,7 +1509,7 @@
         "samarth"
       ],
       "status": "down",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1517,7 +1517,7 @@
         "vpn": false,
         "noSignup": true
       },
-      "failures": 4,
+      "failures": 5,
       "hidden": false,
       "lowPriority": true,
       "note": "Failed 1 of 3 checks."
@@ -1537,7 +1537,7 @@
         "cuet mocks"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T01:30:00Z",
       "safety": {
         "safe": true,
@@ -1572,7 +1572,7 @@
         "noSignup": true
       },
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T02:10:00Z",
       "featured": false,
       "failures": 0,
@@ -1602,7 +1602,7 @@
         "noSignup": true
       },
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T02:10:00Z",
       "featured": false,
       "failures": 0,
@@ -1632,7 +1632,7 @@
         "noSignup": true
       },
       "status": "working",
-      "lastChecked": "2026-11-27T13:40:52.398Z",
+      "lastChecked": "2026-11-27T23:58:54.308Z",
       "addedAt": "2026-11-27T02:10:00Z",
       "featured": false,
       "failures": 0,
