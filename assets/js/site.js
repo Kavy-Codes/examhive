@@ -582,41 +582,92 @@
     [[1, 0, 'entertainment'], [0, 1, 'jeeneet'], [-1, 1, 'btech'], [-1, 0, 'ebooks'], [0, -1, 'games'], [1, -1, 'info']]
       .forEach(([q, r, shelf]) => cells.push({ q, r, shelf }));
 
-    cells.forEach((cell, index) => {
-      const anchor = new Zdog.Anchor({
-        addTo: illo,
-        translate: { x: 1.5 * radius * cell.q, y: Math.sqrt(3) * radius * (cell.r + cell.q / 2) },
-        rotate: { z: Zdog.TAU / 12 }
-      });
+    const centers = cells.map((cell) => ({
+      ...cell,
+      x: 1.5 * radius * cell.q,
+      y: Math.sqrt(3) * radius * (cell.r + cell.q / 2)
+    }));
+    const key = (point) => `${Math.round(point.x * 100)},${Math.round(point.y * 100)}`;
+    const edges = new Map();
+    centers.forEach((cell) => {
       for (let side = 0; side < 6; side++) {
-        const a = side * Zdog.TAU / 6;
-        const b = (side + 1) * Zdog.TAU / 6;
+        const a = {
+          x: cell.x + radius * Math.cos(side * Zdog.TAU / 6),
+          y: cell.y + radius * Math.sin(side * Zdog.TAU / 6)
+        };
+        const b = {
+          x: cell.x + radius * Math.cos((side + 1) * Zdog.TAU / 6),
+          y: cell.y + radius * Math.sin((side + 1) * Zdog.TAU / 6)
+        };
+        const id = [key(a), key(b)].sort().join('|');
+        const edge = edges.get(id) || { a, b, count: 0 };
+        edge.count++;
+        edges.set(id, edge);
+      }
+    });
+    const outline = [...edges.values()].filter((edge) => edge.count === 1);
+    const loop = [];
+    if (outline.length) {
+      const remaining = outline.slice();
+      let current = remaining.shift();
+      while (current) {
+        loop.push(current.a);
+        const next = remaining.findIndex((edge) => key(edge.a) === key(current.b));
+        current = next >= 0 ? remaining.splice(next, 1)[0] : remaining.shift();
+      }
+    }
+
+    const back = loop.map((point) => ({ x: point.x, y: point.y, z: -depth }));
+    if (loop.length) {
+      new Zdog.Shape({ addTo: illo, path: back, closed: true, fill: true, stroke: 0, color: '#8a5a00' });
+      outline.forEach((edge) => {
         new Zdog.Shape({
-          addTo: anchor,
+          addTo: illo,
           path: [
-            { x: Math.cos(a) * radius, y: Math.sin(a) * radius, z: depth },
-            { x: Math.cos(b) * radius, y: Math.sin(b) * radius, z: depth },
-            { x: Math.cos(b) * (radius - 3), y: Math.sin(b) * (radius - 3), z: -depth },
-            { x: Math.cos(a) * (radius - 3), y: Math.sin(a) * (radius - 3), z: -depth }
+            { x: edge.a.x, y: edge.a.y, z: depth },
+            { x: edge.b.x, y: edge.b.y, z: depth },
+            { x: edge.b.x, y: edge.b.y, z: -depth },
+            { x: edge.a.x, y: edge.a.y, z: -depth }
           ],
           closed: true,
           fill: true,
           stroke: 1,
-          color: '#b97900'
+          color: '#c48400'
         });
-      }
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 3, fill: true, stroke: 0, color: '#8a5a00', translate: { z: -depth } });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius, fill: true, stroke: 2, color: '#ffb020', translate: { z: depth } });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, fill: true, stroke: 2, color: shades[index], translate: { z: depth + 1 } });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, stroke: 1.5, color: '#b97900', translate: { z: depth + 2 } });
-      const iconLayer = new Zdog.Anchor({
-        addTo: illo,
-        translate: {
-          x: 1.5 * radius * cell.q,
-          y: Math.sqrt(3) * radius * (cell.r + cell.q / 2),
-          z: depth + 3
-        }
       });
+    }
+
+    centers.forEach((cell, index) => {
+      new Zdog.Polygon({
+        addTo: illo,
+        sides: 6,
+        radius,
+        fill: true,
+        stroke: 2,
+        color: '#ffb020',
+        translate: { x: cell.x, y: cell.y, z: depth },
+        rotate: { z: Zdog.TAU / 12 }
+      });
+      new Zdog.Polygon({
+        addTo: illo,
+        sides: 6,
+        radius: radius - 4,
+        fill: true,
+        stroke: 2,
+        color: shades[index],
+        translate: { x: cell.x, y: cell.y, z: depth + 1 },
+        rotate: { z: Zdog.TAU / 12 }
+      });
+      new Zdog.Polygon({
+        addTo: illo,
+        sides: 6,
+        radius: radius - 4,
+        stroke: 1.5,
+        color: '#b97900',
+        translate: { x: cell.x, y: cell.y, z: depth + 2 },
+        rotate: { z: Zdog.TAU / 12 }
+      });
+      const iconLayer = new Zdog.Anchor({ addTo: illo, translate: { x: cell.x, y: cell.y, z: depth + 3 } });
       drawMark(iconLayer, marks[cell.shelf], '#4a2800');
     });
 
