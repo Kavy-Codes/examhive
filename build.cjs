@@ -107,6 +107,7 @@ function shelfPage(category) {
     <p class="empty-note" id="emptyNote" hidden>No live links here right now. Check the <a href="${base}pages/changelog.html">changelog</a>.</p>
   </main>
   ${footer(base)}
+<div class="page-veil" id="pageVeil" aria-hidden="true"><div class="veil-inner"><span class="veil-hex"></span><span class="veil-text">Charting the way</span><span class="veil-bar"><i></i></span></div></div>
 </body></html>`;
 }
 

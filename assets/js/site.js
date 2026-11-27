@@ -187,6 +187,21 @@
     });
   }
 
+  function initWelcome() {
+    const node = document.getElementById('welcomeLine');
+    if (!node) return;
+    const returning = [
+      'Welcome back. Your saved links are still in this browser.',
+      'The chart was checked again while you were away.',
+      'Pick up where you left off. Your last shelf is one click away.',
+      'New links landed this week. The shelves know where to find them.',
+      'Still here? Every badge shows when it was last checked.'
+    ];
+    node.textContent = state.visits === 1
+      ? 'Welcome aboard. Search above or open a shelf to start.'
+      : returning[(state.visits - 2) % returning.length];
+  }
+
   function initCounts() {
     document.querySelectorAll('[data-shelf-count]').forEach((tile) => {
       const count = visible.filter((link) => link.category === tile.dataset.shelfCount).length;
@@ -529,6 +544,25 @@
     }
   }
 
+  function initTransitions() {
+    const veil = document.getElementById('pageVeil');
+    if (!veil || reduced) return;
+    requestAnimationFrame(() => veil.classList.add('opening'));
+    document.addEventListener('click', (event) => {
+      const link = event.target.closest('a[href]');
+      if (!link || link.target === '_blank' || event.metaKey || event.ctrlKey || event.shiftKey) return;
+      const url = new URL(link.href, location.href);
+      if (url.origin !== location.origin) return;
+      if (url.pathname === location.pathname) return;
+      event.preventDefault();
+      veil.classList.add('active');
+      setTimeout(() => { window.location.href = url.href; }, 320);
+    });
+    window.addEventListener('pageshow', (event) => {
+      if (event.persisted) veil.classList.remove('active');
+    });
+  }
+
   function initHive() {
     const canvas = document.getElementById('hiveCanvas');
     if (!canvas || !window.Zdog) return;
@@ -536,12 +570,12 @@
     const illo = new Zdog.Illustration({
       element: canvas,
       zoom: 1.95,
-      rotate: { x: -0.08, y: -0.08 },
+      rotate: { x: -0.12, y: -0.1 },
       dragRotate: true,
       onDragStart: () => { spinning = false; }
     });
     const radius = 24;
-    const depth = 6;
+    const depth = 9;
     const shades = ['#ffd45e', '#ffc247', '#ffb020', '#f5a400', '#ffd166', '#e59400', '#ffc75a'];
     const marks = { entertainment: 'film', jeeneet: 'target', btech: 'code', ebooks: 'book', games: 'gamepad', info: 'info', hive: 'hex' };
     const cells = [{ q: 0, r: 0, shelf: 'hive' }];
@@ -554,7 +588,24 @@
         translate: { x: 1.5 * radius * cell.q, y: Math.sqrt(3) * radius * (cell.r + cell.q / 2) },
         rotate: { z: Zdog.TAU / 12 }
       });
-      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 2, fill: true, stroke: 0, color: '#a86c00', translate: { z: -4 } });
+      for (let side = 0; side < 6; side++) {
+        const a = side * Zdog.TAU / 6;
+        const b = (side + 1) * Zdog.TAU / 6;
+        new Zdog.Shape({
+          addTo: anchor,
+          path: [
+            { x: Math.cos(a) * radius, y: Math.sin(a) * radius, z: depth },
+            { x: Math.cos(b) * radius, y: Math.sin(b) * radius, z: depth },
+            { x: Math.cos(b) * (radius - 3), y: Math.sin(b) * (radius - 3), z: -depth },
+            { x: Math.cos(a) * (radius - 3), y: Math.sin(a) * (radius - 3), z: -depth }
+          ],
+          closed: true,
+          fill: true,
+          stroke: 1,
+          color: '#b97900'
+        });
+      }
+      new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 3, fill: true, stroke: 0, color: '#8a5a00', translate: { z: -depth } });
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius, fill: true, stroke: 2, color: '#ffb020', translate: { z: depth } });
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, fill: true, stroke: 2, color: shades[index], translate: { z: depth + 1 } });
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, stroke: 1.5, color: '#b97900', translate: { z: depth + 2 } });
@@ -571,7 +622,7 @@
 
     function frame() {
       if (!document.hidden) {
-        if (spinning) illo.rotate.y += 0.0012;
+        if (spinning) illo.rotate.y += 0.0016;
         illo.updateRenderGraph();
       }
       if (!reduced) requestAnimationFrame(frame);
@@ -580,6 +631,7 @@
   }
 
   initSearch();
+  initWelcome();
   initCounts();
   initPick();
   initShelfFlags();
@@ -591,4 +643,5 @@
   initChart();
   initHive();
   initReveals();
+  initTransitions();
 })();

@@ -238,11 +238,31 @@ p {
   text-shadow: 0 0 44px rgba(182, 156, 255, 0.32);
 }
 
+.hero-lede {
+  margin: 18px 0 0;
+  font-size: 18px;
+  color: var(--muted);
+  max-width: 62ch;
+}
+
+.welcome-line {
+  margin: 8px 0 0;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--honey);
+}
+
+.welcome-line b {
+  color: var(--text);
+  font-weight: 500;
+}
+
 .search-shell {
   position: relative;
   animation: rise 700ms var(--ease) 90ms both;
   max-width: 620px;
-  margin: 28px auto 0;
+  margin: 28px 0 0;
 }
 
 .search-box {
@@ -1305,6 +1325,82 @@ dialog::backdrop {
   .cards {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+}
+
+.page-veil {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: grid;
+  place-items: center;
+  background: rgba(4, 3, 8, 0.96);
+  backdrop-filter: blur(10px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 260ms var(--ease), visibility 260ms var(--ease);
+}
+
+.page-veil.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.page-veil.opening {
+  animation: veil-out 560ms var(--ease) forwards;
+}
+
+.veil-inner {
+  display: grid;
+  justify-items: center;
+  gap: 18px;
+}
+
+.veil-hex {
+  width: 42px;
+  height: 42px;
+  background: var(--honey);
+  clip-path: polygon(50% 0, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+  opacity: 0.85;
+  animation: veil-spin 1.4s linear infinite;
+}
+
+.veil-text {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.veil-bar {
+  width: 180px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.1);
+  overflow: hidden;
+}
+
+.veil-bar i {
+  display: block;
+  height: 100%;
+  background: var(--honey);
+  animation: veil-load 900ms var(--ease) infinite;
+}
+
+@keyframes veil-out {
+  0% { opacity: 1; visibility: visible; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
+@keyframes veil-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes veil-load {
+  0% { width: 0; }
+  100% { width: 100%; }
 }
 
 @keyframes rise {
