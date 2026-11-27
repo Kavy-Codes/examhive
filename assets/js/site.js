@@ -500,7 +500,7 @@
   }
 
   function drawMark(parent, name, color) {
-    const style = { stroke: 2.4, color, translate: { z: 14 } };
+    const style = { stroke: 2.8, color, translate: { z: 0 } };
     const line = (path, extra) => new Zdog.Shape({ addTo: parent, path, closed: false, ...style, ...(extra || {}) });
     if (name === 'film') {
       new Zdog.Rect({ addTo: parent, width: 20, height: 14, ...style });
@@ -509,7 +509,7 @@
     } else if (name === 'target') {
       new Zdog.Ellipse({ addTo: parent, diameter: 20, ...style });
       new Zdog.Ellipse({ addTo: parent, diameter: 12, ...style });
-      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { z: 14 } });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { z: 0 } });
     } else if (name === 'code') {
       line([{ x: -3, y: -7 }, { x: -9, y: 0 }, { x: -3, y: 7 }]);
       line([{ x: 3, y: -7 }, { x: 9, y: 0 }, { x: 3, y: 7 }]);
@@ -518,14 +518,14 @@
       line([{ x: -4, y: -10 }, { x: -4, y: 10 }]);
     } else if (name === 'gamepad') {
       new Zdog.Rect({ addTo: parent, width: 22, height: 14, ...style });
-      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: -6, y: 0, z: 14 } });
-      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 6, y: 0, z: 14 } });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: -6, y: 0, z: 0 } });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 6, y: 0, z: 0 } });
     } else if (name === 'info') {
       new Zdog.Ellipse({ addTo: parent, diameter: 20, ...style });
       line([{ x: 0, y: -3 }, { x: 0, y: 7 }]);
-      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 0, y: -8, z: 14 } });
+      new Zdog.Shape({ addTo: parent, stroke: 4, color, translate: { x: 0, y: -8, z: 0 } });
     } else {
-      new Zdog.Polygon({ addTo: parent, sides: 6, radius: 8, fill: true, ...style });
+      new Zdog.Polygon({ addTo: parent, sides: 6, radius: 7, stroke: 3, fill: false, ...style });
     }
   }
 
@@ -536,7 +536,7 @@
     const illo = new Zdog.Illustration({
       element: canvas,
       zoom: 1.95,
-      rotate: { x: -0.24, y: -0.18 },
+      rotate: { x: -0.18, y: -0.12 },
       dragRotate: true,
       onDragStart: () => { spinning = false; }
     });
@@ -574,12 +574,20 @@
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius, fill: true, stroke: 2, color: '#ffb020', translate: { z: depth } });
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, fill: true, stroke: 2, color: shades[index], translate: { z: depth + 1 } });
       new Zdog.Polygon({ addTo: anchor, sides: 6, radius: radius - 4, stroke: 1.5, color: '#b97900', translate: { z: depth + 2 } });
-      drawMark(anchor, marks[cell.shelf], '#5c3400');
+      const iconLayer = new Zdog.Anchor({
+        addTo: illo,
+        translate: {
+          x: 1.5 * radius * cell.q,
+          y: Math.sqrt(3) * radius * (cell.r + cell.q / 2),
+          z: depth + 3
+        }
+      });
+      drawMark(iconLayer, marks[cell.shelf], '#4a2800');
     });
 
     function frame() {
       if (!document.hidden) {
-        if (spinning) illo.rotate.y += 0.0025;
+        if (spinning) illo.rotate.y += 0.0018;
         illo.updateRenderGraph();
       }
       if (!reduced) requestAnimationFrame(frame);

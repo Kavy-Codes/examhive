@@ -87,7 +87,7 @@ function topbar(base, shelfId) {
 function shelfPage(category) {
   const base = '../';
   const links = registry.links.filter((link) => link.category === category.id && !link.hidden);
-  const sorted = [...links].sort((a, b) => Number(b.featured) - Number(a.featured));
+  const sorted = [...links].sort((a, b) => Number(!!b.featured) - Number(!!a.featured) || Number(!!a.lowPriority) - Number(!!b.lowPriority));
   const warning = category.id === 'entertainment'
     ? `<div class="shelf-warning">${icon('shield', base)}<p>Entertainment links are user-submitted and third-party. Some entertainment sites may host copyrighted material. Check your local laws before using them. We host nothing.</p></div>`
     : '';

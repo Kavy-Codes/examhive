@@ -60,7 +60,8 @@ async function check(link) {
   link.status = status;
   link.lastChecked = now;
   link.failures = failures;
-  link.hidden = failures >= failLimit;
+  link.hidden = false;
+  link.lowPriority = failures >= failLimit;
   if (status === 'down' && !link.note) link.note = `Failed ${failures} of ${failLimit} checks.`;
   if (status !== 'down' && link.note && link.note.startsWith('Failed ')) delete link.note;
 
@@ -85,7 +86,7 @@ async function run() {
   fs.writeFileSync(registryPath, JSON.stringify(registry, null, 2) + '\n');
   fs.writeFileSync(checksPath, JSON.stringify(history, null, 2) + '\n');
 
-  const summary = `${now} checked=${results.length} working=${results.filter((r) => r.status === 'working').length} slow=${results.filter((r) => r.status === 'slow').length} down=${results.filter((r) => r.status === 'down').length} hidden=${results.filter((r) => r.hidden).length}`;
+  const summary = `${now} checked=${results.length} working=${results.filter((r) => r.status === 'working').length} slow=${results.filter((r) => r.status === 'slow').length} down=${results.filter((r) => r.status === 'down').length} bottom=${results.filter((r) => r.lowPriority).length}`;
   fs.appendFileSync(logPath, summary + '\n');
   console.log('\n' + summary);
   console.log('Run on a cron: 0 */4 * * * cd ' + root + ' && npm run health');
