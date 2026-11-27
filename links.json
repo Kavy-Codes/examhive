@@ -1,12 +1,12 @@
 {
   "meta": {
     "label": "ExamHive link registry",
-    "checkedAt": "2026-11-27T00:38:28.232Z",
+    "checkedAt": "2026-11-27T00:52:30.662Z",
     "note": "Statuses are recorded by the maintainer from periodic HTTP checks, not invented live telemetry. 'Slow' also covers sites that block automated checks.",
     "lastRun": {
-      "checked": 47,
-      "working": 35,
-      "down": 11
+      "checked": 54,
+      "working": 40,
+      "down": 12
     },
     "statuses": [
       "working",
@@ -59,6 +59,13 @@
       "index": "06",
       "color": "#6EE7C4",
       "description": "About the site, safety guidance, contact and policies."
+    },
+    {
+      "id": "cuet",
+      "label": "CUET",
+      "index": "07",
+      "color": "#FFCB8A",
+      "description": "CUET UG papers, mocks, syllabus and official update portals."
     }
   ],
   "links": [
@@ -70,7 +77,7 @@
       "description": "Large on-demand film and series library. No signup needed.",
       "icon": "film",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -88,7 +95,7 @@
       "aliases": [
         "xprime"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -100,7 +107,7 @@
       "description": "Regional-language film catalogue with subtitles on most titles.",
       "icon": "languages",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -117,7 +124,7 @@
       "aliases": [
         "bitcine"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -129,7 +136,7 @@
       "description": "Offline downloads without ad breaks. Useful for travel.",
       "icon": "download",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -147,7 +154,7 @@
       "aliases": [
         "pstream"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -159,7 +166,7 @@
       "description": "Live sport, films and multi-language channels in one place. A VPN helps.",
       "icon": "layers",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-23T00:00:00Z",
       "featured": false,
       "safety": {
@@ -188,7 +195,7 @@
       "description": "Live events in high definition. Some streams need a VPN.",
       "icon": "trophy",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -205,7 +212,7 @@
         "ntv",
         "ntvstream"
       ],
-      "failures": 3,
+      "failures": 4,
       "hidden": false,
       "note": "Failed 1 of 3 checks.",
       "lowPriority": true
@@ -218,7 +225,7 @@
       "description": "Long-form factual films, organised by subject.",
       "icon": "clapper",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -247,8 +254,8 @@
       "url": "https://animekai.to/home",
       "description": "Subbed and dubbed series with a deep back catalogue.",
       "icon": "sparkles",
-      "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -265,10 +272,9 @@
         "animekai",
         "anime kai"
       ],
-      "failures": 1,
+      "failures": 0,
       "hidden": false,
-      "lowPriority": false,
-      "note": "Failed 1 of 3 checks."
+      "lowPriority": false
     },
     {
       "id": "novatra",
@@ -278,7 +284,7 @@
       "description": "Timed practice tests with instant scoring and explanations.",
       "icon": "clipboard",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-25T00:00:00Z",
       "featured": false,
       "safety": {
@@ -308,7 +314,7 @@
       "description": "A large compiled folder of recorded lectures and reference books.",
       "icon": "presentation",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -325,7 +331,7 @@
         "lectures",
         "mega"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "note": "Failed 1 of 3 checks.",
       "lowPriority": true
@@ -338,7 +344,7 @@
       "description": "A curated set of build ideas and walkthroughs. Still being charted.",
       "icon": "rocket",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -366,7 +372,7 @@
       "description": "Fiction, non-fiction and academic titles, including audio books.",
       "icon": "library",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -384,7 +390,7 @@
         "annas",
         "anna archive"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -396,7 +402,7 @@
       "description": "Millions of books and papers with direct download mirrors.",
       "icon": "book",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -426,7 +432,7 @@
       "description": "Fiction, comics and non-fiction with frequently rotated mirrors.",
       "icon": "books",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -444,7 +450,7 @@
         "zlibrary",
         "z lib"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -456,7 +462,7 @@
       "description": "Pre-installed portable PC games, ready to unzip and play.",
       "icon": "gamepad",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -486,7 +492,7 @@
       "description": "Compressed game repacks with detailed install instructions.",
       "icon": "package",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-24T00:00:00Z",
       "featured": true,
       "safety": {
@@ -516,7 +522,7 @@
       "description": "Pre-installed Steam titles with direct downloads.",
       "icon": "disc",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -547,7 +553,7 @@
       "description": "A backup source when the main game links are unavailable.",
       "icon": "lifebuoy",
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": false,
       "safety": {
@@ -564,7 +570,7 @@
       "aliases": [
         "gamebounty"
       ],
-      "failures": 6,
+      "failures": 7,
       "hidden": false,
       "lowPriority": true
     },
@@ -576,7 +582,7 @@
       "description": "What this site is and how link health checks work.",
       "icon": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-08-14T00:00:00Z",
       "featured": true,
       "safety": {
@@ -614,7 +620,7 @@
         "reddit jee"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -643,7 +649,7 @@
         "freemediaheckyeah"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -672,7 +678,7 @@
         "khan academy"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -701,7 +707,7 @@
         "ocw"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -730,7 +736,7 @@
         "programming books"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -758,7 +764,7 @@
         "reader"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:05:00Z",
       "featured": false,
       "safety": {
@@ -774,7 +780,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -802,7 +808,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -830,7 +836,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -858,7 +864,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -886,7 +892,7 @@
     {
       "category": "info",
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-26T23:20:00Z",
       "featured": false,
       "safety": {
@@ -929,7 +935,7 @@
       ],
       "featured": true,
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -958,7 +964,7 @@
       ],
       "featured": false,
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -973,7 +979,7 @@
     {
       "id": "cuet-archive",
       "title": "CUET '27 Archive",
-      "category": "jeeneet",
+      "category": "cuet",
       "url": "https://kavy-codes.github.io/cuet-archive/",
       "description": "Mock tests and topic resources for CUET aspirants.",
       "icon": "clipboard",
@@ -988,7 +994,7 @@
       ],
       "featured": false,
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -1018,7 +1024,7 @@
       ],
       "featured": true,
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T00:10:00Z",
       "safety": {
         "safe": true,
@@ -1043,7 +1049,7 @@
         "legal"
       ],
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1055,7 +1061,7 @@
         "gutenberg",
         "project gutenberg"
       ],
-      "failures": 1,
+      "failures": 2,
       "hidden": false,
       "lowPriority": false,
       "note": "Failed 1 of 3 checks."
@@ -1073,7 +1079,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1101,8 +1107,8 @@
         "public domain",
         "legal"
       ],
-      "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "status": "slow",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1131,7 +1137,7 @@
         "legal"
       ],
       "status": "down",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1143,7 +1149,7 @@
         "ncert",
         "ncert textbooks"
       ],
-      "failures": 1,
+      "failures": 2,
       "hidden": false,
       "lowPriority": false,
       "note": "Failed 1 of 3 checks."
@@ -1161,7 +1167,7 @@
         "notices"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1190,7 +1196,7 @@
         "free"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1219,7 +1225,7 @@
         "free"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1248,7 +1254,7 @@
         "developer"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1277,7 +1283,7 @@
         "practice"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1306,7 +1312,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1335,7 +1341,7 @@
         "legal"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1363,7 +1369,7 @@
         "guide"
       ],
       "status": "slow",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1391,7 +1397,7 @@
         "tool"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1419,7 +1425,7 @@
         "adblock"
       ],
       "status": "working",
-      "lastChecked": "2026-11-27T00:38:28.232Z",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
       "addedAt": "2026-11-27T01:00:00Z",
       "safety": {
         "safe": true,
@@ -1431,6 +1437,203 @@
         "ublock",
         "ublock origin"
       ],
+      "failures": 0,
+      "hidden": false,
+      "lowPriority": false
+    },
+    {
+      "id": "allen-modules",
+      "title": "Allen JEE Modules",
+      "category": "jeeneet",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1e58pni/free_allen_jee_modules_phychem/",
+      "description": "Community thread with free Physics and Chemistry modules.",
+      "icon": "clipboard",
+      "tags": [
+        "modules",
+        "physics",
+        "chemistry"
+      ],
+      "aliases": [
+        "allen modules"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false,
+      "lowPriority": false
+    },
+    {
+      "id": "mega-dump",
+      "title": "JEENEETards Material Dump",
+      "category": "jeeneet",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1rpatgk/mega_material_dump/",
+      "description": "Large collection of sheets, NCERT text, question banks and tests.",
+      "icon": "library",
+      "tags": [
+        "sheets",
+        "question bank",
+        "pyq"
+      ],
+      "aliases": [
+        "mega dump"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false,
+      "lowPriority": false
+    },
+    {
+      "id": "adv-dump",
+      "title": "Advanced Material Dump",
+      "category": "jeeneet",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/1fu82ux/all_adv_material_dump_for_this_sub/",
+      "description": "Books, PYQs and test papers for JEE Advanced preparation.",
+      "icon": "books",
+      "tags": [
+        "advanced",
+        "books",
+        "pyq"
+      ],
+      "aliases": [
+        "advanced dump"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false,
+      "lowPriority": false
+    },
+    {
+      "id": "sauce",
+      "title": "Final Sauce Compilation",
+      "category": "jeeneet",
+      "url": "https://www.reddit.com/r/JEENEETards/comments/x82u7l/final_sauce_compilation_for_jee_2023tards/",
+      "description": "Curated book and revision list with tests and lecture links.",
+      "icon": "spark",
+      "tags": [
+        "books",
+        "revision",
+        "tests"
+      ],
+      "aliases": [
+        "final sauce"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 0,
+      "hidden": false,
+      "lowPriority": false
+    },
+    {
+      "id": "cuet-ngta",
+      "title": "NTA CUET UG",
+      "category": "cuet",
+      "url": "https://exams.nta.nic.in/cuet-ug/",
+      "description": "Official NTA portal for CUET UG dates, notices and results.",
+      "icon": "clipboard",
+      "tags": [
+        "official",
+        "dates",
+        "notice"
+      ],
+      "aliases": [
+        "nta cuet"
+      ],
+      "featured": true,
+      "status": "down",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 1,
+      "hidden": false,
+      "lowPriority": false,
+      "note": "Failed 1 of 3 checks."
+    },
+    {
+      "id": "cuet-portal",
+      "title": "CUET Samarth Portal",
+      "category": "cuet",
+      "url": "https://cuet.samarth.ac.in/",
+      "description": "Official registration and information portal for CUET UG.",
+      "icon": "external",
+      "tags": [
+        "official",
+        "registration"
+      ],
+      "aliases": [
+        "samarth"
+      ],
+      "status": "down",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
+      "failures": 1,
+      "hidden": false,
+      "lowPriority": false,
+      "note": "Failed 1 of 3 checks."
+    },
+    {
+      "id": "cuet-mocks",
+      "title": "CUET Mock Papers",
+      "category": "cuet",
+      "url": "https://kavy-codes.github.io/cuet-archive/mocks.html",
+      "description": "In-browser mock tests from the CUET Archive.",
+      "icon": "target",
+      "tags": [
+        "mocks",
+        "practice"
+      ],
+      "aliases": [
+        "cuet mocks"
+      ],
+      "status": "working",
+      "lastChecked": "2026-11-27T00:52:30.662Z",
+      "addedAt": "2026-11-27T01:30:00Z",
+      "safety": {
+        "safe": true,
+        "ads": false,
+        "vpn": false,
+        "noSignup": true
+      },
       "failures": 0,
       "hidden": false,
       "lowPriority": false

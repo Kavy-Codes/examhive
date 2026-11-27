@@ -97,7 +97,7 @@ function shelfPage(category) {
   <main class="wrap shelf">
     <a class="back" href="${base}index.html">← All shelves</a>
     <div class="shelf-head">
-      <span class="eyebrow" style="--shelf:${category.color}">Shelf ${category.index} / 06</span>
+      <span class="eyebrow" style="--shelf:${category.color}">Shelf ${category.index} / 07</span>
       <h1 style="--shelf:${category.color}">${esc(category.label)}</h1>
       <p>${esc(category.description)}</p>
       <div class="shelf-flags"><span id="streak" class="mono"></span><span id="recentStrip" class="mono"></span></div>
@@ -121,4 +121,4 @@ fs.writeFileSync(
 );
 
 const visible = registry.links.filter((link) => !link.hidden);
-console.log(`Built 6 shelf pages and assets/js/links.js: ${visible.length} visible links, ${registry.meta.checkedAt}.`);
+console.log(`Built ${registry.categories.length} shelf pages and assets/js/links.js: ${visible.length} visible links, ${registry.meta.checkedAt}.`);
